@@ -2,4 +2,6 @@ language: objective-c
 xcode_project: DDNavTextDemo.xcodeproj
 xcode_scheme: DDNavTextTests
 xcode_sdk: iphonesimulator
-
+notifications:
+  slack:
+    secure: HOeG2Uotw5GRpoWFLkusHnou5C7GcfRqwC/k2E+W2pmCXskkBLaMGqHJw0xuaIeW+FlJf8Y+KVoifK6sZp/QS5v6JYn5/AgzwJY8vzCwHhKpD4g3JEYbKtPO/7oloMHgcqlG5uPn2TTuIlMiJ3TmwlsA06o4+g6m3oNsp422Dm8=
