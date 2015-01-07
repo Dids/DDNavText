@@ -1,3 +1,5 @@
 language: objective-c
 xcode_project: DDNavTextDemo.xcodeproj
 xcode_scheme: DDNavTextTests
+xcode_sdk: iphonesimulator
+
