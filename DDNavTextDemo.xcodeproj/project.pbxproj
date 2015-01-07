@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07EBFBB21A5D29BA00682656 /* DDNavTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EBFBB11A5D29BA00682656 /* DDNavTextTests.m */; };
 		07F9E2181A4056B80059C0DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E2171A4056B80059C0DE /* main.m */; };
 		07F9E21B1A4056B80059C0DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E21A1A4056B80059C0DE /* AppDelegate.m */; };
 		07F9E21E1A4056B80059C0DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E21D1A4056B80059C0DE /* ViewController.m */; };
@@ -15,7 +16,20 @@
 		07F9E23E1A4056EF0059C0DE /* DDNavText.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E23D1A4056EF0059C0DE /* DDNavText.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		07EBFBB31A5D29BA00682656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F9E20A1A4056B80059C0DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F9E2111A4056B80059C0DE;
+			remoteInfo = DDNavTextDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		07EBFBAD1A5D29BA00682656 /* DDNavTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDNavTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EBFBB01A5D29BA00682656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EBFBB11A5D29BA00682656 /* DDNavTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDNavTextTests.m; sourceTree = "<group>"; };
 		07F9E2121A4056B80059C0DE /* DDNavTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDNavTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F9E2161A4056B80059C0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F9E2171A4056B80059C0DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -30,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07EBFBAA1A5D29BA00682656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07F9E20F1A4056B80059C0DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,11 +61,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07EBFBAE1A5D29BA00682656 /* DDNavTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				07EBFBB11A5D29BA00682656 /* DDNavTextTests.m */,
+				07EBFBAF1A5D29BA00682656 /* Supporting Files */,
+			);
+			path = DDNavTextTests;
+			sourceTree = "<group>";
+		};
+		07EBFBAF1A5D29BA00682656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07EBFBB01A5D29BA00682656 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		07F9E2091A4056B80059C0DE = {
 			isa = PBXGroup;
 			children = (
 				07F9E23B1A4056DC0059C0DE /* DDNavText */,
 				07F9E2141A4056B80059C0DE /* DDNavTextDemo */,
+				07EBFBAE1A5D29BA00682656 /* DDNavTextTests */,
 				07F9E2131A4056B80059C0DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				07F9E2121A4056B80059C0DE /* DDNavTextDemo.app */,
+				07EBFBAD1A5D29BA00682656 /* DDNavTextTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +132,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		07EBFBAC1A5D29BA00682656 /* DDNavTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EBFBB71A5D29BA00682656 /* Build configuration list for PBXNativeTarget "DDNavTextTests" */;
+			buildPhases = (
+				07EBFBA91A5D29BA00682656 /* Sources */,
+				07EBFBAA1A5D29BA00682656 /* Frameworks */,
+				07EBFBAB1A5D29BA00682656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07EBFBB41A5D29BA00682656 /* PBXTargetDependency */,
+			);
+			name = DDNavTextTests;
+			productName = DDNavTextTests;
+			productReference = 07EBFBAD1A5D29BA00682656 /* DDNavTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		07F9E2111A4056B80059C0DE /* DDNavTextDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07F9E2351A4056B80059C0DE /* Build configuration list for PBXNativeTarget "DDNavTextDemo" */;
@@ -119,6 +177,10 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Didstopia;
 				TargetAttributes = {
+					07EBFBAC1A5D29BA00682656 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 07F9E2111A4056B80059C0DE;
+					};
 					07F9E2111A4056B80059C0DE = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -138,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				07F9E2111A4056B80059C0DE /* DDNavTextDemo */,
+				07EBFBAC1A5D29BA00682656 /* DDNavTextTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07EBFBAB1A5D29BA00682656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07F9E2101A4056B80059C0DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +225,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07EBFBA91A5D29BA00682656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EBFBB21A5D29BA00682656 /* DDNavTextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07F9E20E1A4056B80059C0DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +246,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		07EBFBB41A5D29BA00682656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F9E2111A4056B80059C0DE /* DDNavTextDemo */;
+			targetProxy = 07EBFBB31A5D29BA00682656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		07F9E21F1A4056B80059C0DE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -180,6 +266,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		07EBFBB51A5D29BA00682656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DDNavTextTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDNavTextDemo.app/DDNavTextDemo";
+			};
+			name = Debug;
+		};
+		07EBFBB61A5D29BA00682656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DDNavTextTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDNavTextDemo.app/DDNavTextDemo";
+			};
+			name = Release;
+		};
 		07F9E2331A4056B80059C0DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,6 +405,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07EBFBB71A5D29BA00682656 /* Build configuration list for PBXNativeTarget "DDNavTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EBFBB51A5D29BA00682656 /* Debug */,
+				07EBFBB61A5D29BA00682656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		07F9E20D1A4056B80059C0DE /* Build configuration list for PBXProject "DDNavTextDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

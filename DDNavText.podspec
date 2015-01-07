@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DDNavText"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Easily show additional text in your UINavigationBar title."
   s.homepage         = "http://github.com/Dids/DDNavText"
   s.license          = { :type => "MIT", :file => "LICENSE" }
