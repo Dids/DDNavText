@@ -1,7 +1,13 @@
+osx_image: xcode8.3
+
 language: objective-c
-xcode_project: DDNavTextDemo.xcodeproj
-xcode_scheme: DDNavTextTests
-xcode_sdk: iphonesimulator
-notifications:
-  slack:
-    secure: HOeG2Uotw5GRpoWFLkusHnou5C7GcfRqwC/k2E+W2pmCXskkBLaMGqHJw0xuaIeW+FlJf8Y+KVoifK6sZp/QS5v6JYn5/AgzwJY8vzCwHhKpD4g3JEYbKtPO/7oloMHgcqlG5uPn2TTuIlMiJ3TmwlsA06o4+g6m3oNsp422Dm8=
+
+sudo: false
+
+env:
+  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3'"
+  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone SE,OS=9.3'"
+  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone 5s,OS=8.4'"
+
+script:
+  - eval $XCODE_BUILD_COMMAND
