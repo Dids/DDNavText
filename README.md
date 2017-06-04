@@ -1,4 +1,4 @@
-# DDNavText [![Build Status](https://travis-ci.org/Dids/DDNavText.png?branch=master)](https://travis-ci.org/Dids/DDNavText)
+# DDNavText [![Build Status](https://travis-ci.org/Dids/DDNavText.svg?branch=master)](https://travis-ci.org/Dids/DDNavText)
 
 DDNavText allows you to easily show additional text in your UINavigationBar title. It additionally provides a custom delay for presenting and dismissing.
 
