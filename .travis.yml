@@ -5,9 +5,17 @@ language: objective-c
 sudo: false
 
 env:
-  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3'"
+  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3.1'"
   - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone SE,OS=9.3'"
   - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDNavTextDemo.xcodeproj -scheme DDNavTextTests -destination 'platform=iOS Simulator,name=iPhone 5s,OS=8.4'"
 
 script:
   - eval $XCODE_BUILD_COMMAND
+  
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/c92112924c79c629d5fc
+    on_success: change
+    on_failure: always
+    on_start: never
